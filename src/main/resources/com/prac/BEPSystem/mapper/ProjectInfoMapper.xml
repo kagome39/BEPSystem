@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace:名称空间 -->
+<mapper namespace="com.prac.BEPSystem.mapper.ProjectInfoMapper">
+
+<!--    id 唯一标识
+        type 映射的类型，支持别名-->
+    <resultMap id="projectInfoResultMap" type="com.prac.BEPSystem.pojo.ProjectInfo">
+        <!--
+            id 主键字段的映射
+                column 表的类名
+                property 实体类的属性名
+            result 一般字段的映射
+        -->
+        <id column="project_id" property="projectId"/>
+        <result column="project_name" property="projectName"/>
+        <result column="project_description" property="projectDescription"/>
+        <result column="project_budget" property="projectBudget"/>
+    </resultMap>
+
+</mapper>

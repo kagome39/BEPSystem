@@ -4,4 +4,8 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>SelectAllServlet</servlet-name>
+        <servlet-class>com.prac.BEPSystem.web.servlet.SelectAllServlet</servlet-class>
+    </servlet>
 </web-app>
