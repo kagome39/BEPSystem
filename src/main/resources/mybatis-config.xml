@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
-<!--    <typeAliases>-->
-<!--        <package name="com.prac.BEPSystem"/>-->
-<!--    </typeAliases>-->
+<!--    给包起别名-->
+    <typeAliases>
+        <package name="com.prac.BEPSystem.pojo"/>
+    </typeAliases>
 
     <!--
     environments：配置数据库连接环境信息。
@@ -23,27 +23,10 @@
                 <property name="password" value="1234"/>
             </dataSource>
         </environment>
-
-        <environment id="test">
-            <transactionManager type="JDBC"/>
-            <dataSource type="POOLED">
-                <!--数据库连接信息-->
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql:///bepsystem?useSSL=false"/>
-                <property name="username" value="root"/>
-                <property name="password" value="1234"/>
-            </dataSource>
-        </environment>
     </environments>
     <mappers>
-        <!--加载sql映射文件-->
-<!--        <mapper resource="com/prac/BEPSystem/mapper/TendererUserMapper.xml"/>-->
-<!--        <mapper resource="com/prac/BEPSystem/mapper/BidderUserMapper.xml"/>-->
-<!--        <mapper resource="com/prac/BEPSystem/mapper/ProjectMapper.xml"/>-->
-
         <!--Mapper代理方式-->
         <package name="com.prac.BEPSystem.mapper"/>
-
     </mappers>
 
 

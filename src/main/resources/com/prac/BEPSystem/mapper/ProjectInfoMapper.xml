@@ -16,10 +16,12 @@
                 property 实体类的属性名
             result 一般字段的映射
         -->
-        <id column="project_id" property="projectId"/>
-        <result column="project_name" property="projectName"/>
-        <result column="project_description" property="projectDescription"/>
-        <result column="project_budget" property="projectBudget"/>
+        <id column="p_id" property="projectId"/>
+        <result column="p_name" property="projectName"/>
+        <result column="classification" property="projectClassification"/>
+        <result column="p_pub_acct" property="projectPublishAccount"/>
+        <result column="p_description" property="projectDescription"/>
+        <result column="p_budget" property="projectBudget"/>
     </resultMap>
 
 </mapper>

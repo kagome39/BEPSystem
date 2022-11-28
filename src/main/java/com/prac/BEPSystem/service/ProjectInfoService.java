@@ -11,4 +11,10 @@ public interface ProjectInfoService {
      * @return
      */
     List<ProjectInfo> selectAll();
+
+    /**
+     * 添加数据
+     * @param projectInfo
+     */
+    void add(ProjectInfo projectInfo);
 }

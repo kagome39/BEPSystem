@@ -2,10 +2,11 @@ package com.prac.BEPSystem.pojo;
 
 public class ProjectInfo {
     private Integer projectId;
-    private String  projectName;
-    private String  projectDescription;
-    private double projectBudget;
-
+    private String projectName;
+    private String projectPublishAccount;
+    private String projectClassification;
+    private String projectDescription;
+    private float projectBudget;
 
     public Integer getProjectId() {
         return projectId;
@@ -23,6 +24,22 @@ public class ProjectInfo {
         this.projectName = projectName;
     }
 
+    public String getProjectPublishAccount() {
+        return projectPublishAccount;
+    }
+
+    public void setProjectPublishAccount(String projectPublishAccount) {
+        this.projectPublishAccount = projectPublishAccount;
+    }
+
+    public String getProjectClassification() {
+        return projectClassification;
+    }
+
+    public void setProjectClassification(String projectClassification) {
+        this.projectClassification = projectClassification;
+    }
+
     public String getProjectDescription() {
         return projectDescription;
     }
@@ -31,11 +48,11 @@ public class ProjectInfo {
         this.projectDescription = projectDescription;
     }
 
-    public double getProjectBudget() {
+    public float getProjectBudget() {
         return projectBudget;
     }
 
-    public void setProjectBudget(double projectBudget) {
+    public void setProjectBudget(float projectBudget) {
         this.projectBudget = projectBudget;
     }
 
@@ -44,6 +61,8 @@ public class ProjectInfo {
         return "ProjectInfo{" +
                 "projectId=" + projectId +
                 ", projectName='" + projectName + '\'' +
+                ", projectPublishAccount='" + projectPublishAccount + '\'' +
+                ", projectClassification='" + projectClassification + '\'' +
                 ", projectDescription='" + projectDescription + '\'' +
                 ", projectBudget=" + projectBudget +
                 '}';
