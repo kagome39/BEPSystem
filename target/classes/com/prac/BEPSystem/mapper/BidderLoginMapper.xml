@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace:名称空间 -->
+<mapper namespace="com.prac.BEPSystem.mapper.BidderLoginMapper">
+    <!--statement-->
+    <select resultType="com.prac.BEPSystem.pojo.BidderLogin" id="selectAll">
+        select *
+        from bidder_login;
+    </select>
+    <!-- <select id="selectById" resultType="user">select *from tb_user where id = #{id};</select>-->
+    <select resultType="com.prac.BEPSystem.pojo.BidderLogin" id="select">
+        select *from bidder_login
+        where username = #{arg0}
+          and password = #{param2}
+    </select>
+</mapper>
